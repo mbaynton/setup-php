@@ -13,34 +13,31 @@ fi
 
 sudo add-apt-repository ppa:ondrej/php
 
-if [ $version = '5.6' ]
-then
-    sudo apt-fast install -y build-essential debconf-utils unzip autogen autoconf libtool pkg-config
+sudo apt-fast install -y build-essential debconf-utils unzip autogen autoconf libtool pkg-config
 
-    sudo apt-fast install -y \
-         php${version}-bcmath \
-         php${version}-bz2 \
-         php${version}-cgi \
-         php${version}-cli \
-         php${version}-common \
-         php${version}-curl \
-         php${version}-dba \
-         php${version}-enchant \
-         php${version}-gd \
-         php${version}-json \
-         php${version}-mbstring \
-         php${version}-mysql \
-         php${version}-odbc \
-         php${version}-opcache \
-         php${version}-pgsql \
-         php${version}-readline \
-         php${version}-soap \
-         php${version}-sqlite3 \
-         php${version}-xml \
-         php${version}-xmlrpc \
-         php${version}-xsl \
-         php${version}-zip
-fi
+sudo apt-fast install -y \
+     php${version}-bcmath \
+     php${version}-bz2 \
+     php${version}-cgi \
+     php${version}-cli \
+     php${version}-common \
+     php${version}-curl \
+     php${version}-dba \
+     php${version}-enchant \
+     php${version}-gd \
+     php${version}-json \
+     php${version}-mbstring \
+     php${version}-mysql \
+     php${version}-odbc \
+     php${version}-opcache \
+     php${version}-pgsql \
+     php${version}-readline \
+     php${version}-soap \
+     php${version}-sqlite3 \
+     php${version}-xml \
+     php${version}-xmlrpc \
+     php${version}-xsl \
+     php${version}-zip
 
 sudo apt-fast install -y \
      php${version}-dev \
