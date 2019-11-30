@@ -11,9 +11,10 @@ then
     sudo systemctl disable php${version}-fpm
 fi
 
+sudo add-apt-repository ppa:ondrej/php
+
 if [ $version = '5.6' ]
 then
-    sudo add-apt-repository ppa:ondrej/php
     sudo apt-fast install -y build-essential debconf-utils unzip autogen autoconf libtool pkg-config
 
     sudo apt-fast install -y \
